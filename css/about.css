@@ -11,46 +11,74 @@
   color: white;
   height: auto;
   margin-top: -43px;
-  padding-bottom: 1%;
+  padding-bottom: 0.5%;
   top: 50%;
   left: 50%;
 }
 .banner h1{
-  padding-top: 50px;
+  padding-top: 35px;
   font-size: 4em;
 }
+.container-about {
+  display: flex;
+  justify-content: center;
+}
+
 .card {
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   transition: 0.3s;
   width: 40%;
+  margin: 25px;
+  margin-top: 0.5px;
 }
 
-.stats {
-  padding: 2px 16px;
+.main {
+  text-align: center;
+}
+.main h1{
+  font-size: 2.5em;
+  color: teal;
+}
+.stats h2{
+  font-size: 3.5em;
+  color: darkblue;
 }
 
-.flip-card {
+.stats p{
+  font-size: 1.4em;
+  color: #444;
+}
+.team p{
+  font-size: 1.4em;
+  color: #444;
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+.member-card {
   background-color: transparent;
   width: 300px;
-  height: 420px;
+  height: 290px;
   perspective: 1000px;
+  margin: 10px;
+  margin-top: 1px;
 }
 
-.flip-card-inner {
+.member-card-inner {
   position: relative;
   width: 100%;
-  height: 100%;
+  height: 155%;
   text-align: center;
   transition: transform 0.6s;
   transform-style: preserve-3d;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
 
-.flip-card:hover .flip-card-inner {
+.member-card:hover .member-card-inner {
   transform: rotateY(180deg);
 }
 
-.flip-card-front, .flip-card-back {
+.member-card-front, .member-card-back {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -58,13 +86,59 @@
   backface-visibility: hidden;
 }
 
-.flip-card-front {
-  background-color: #bbb;
+.member-card-front {
+  background: linear-gradient(90deg,#28a228,#3498db);
   color: black;
 }
 
-.flip-card-back {
-  background-color: #2980b9;
+.member-card-front img {
+  width: 300px;;height: 330px;;
+}
+
+.member-card-back {
+  background-color: rgba(32, 146, 100, 0.824);
   color: white;
   transform: rotateY(180deg);
+}
+.member-card-back p{
+  text-align: left;
+  font-family: 'Arial Narrow';
+  font-size: 1em;
+  margin-top: 10%;
+  margin-left: 10%;
+  margin-right: 10%;
+  color: black;
+}
+
+.member h2 {
+  font-size: 1.8em;
+  color: black;
+  margin-top: -4px;
+}
+
+.member p {
+  font-size: 1.2em;
+  color: #444;
+  margin-top: -15px;
+}
+
+.press {
+  margin-top: 15%;
+  display: grid;
+  height: 300px;
+  width: auto;
+  background-color: mintcream;
+}
+.press h1{
+  text-align: center;
+  color: #444;
+  font-size: 1.8em;
+}
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
 }
