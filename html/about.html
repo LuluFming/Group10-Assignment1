@@ -1,10 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!--comment123-->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="../css/style.css">
   <link rel="stylesheet" href="../css/about.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
   <!-- Navigation Bar-->
@@ -31,16 +30,16 @@
 
   <div class="main stats">
     <h1> Quick Stats</h1>
-    <section class="container-about">
-        <div class="card">
+    <section class="container-about  container-stats">
+        <div class="card-stat">
             <h2><b>90%</b></h2> 
             <p>Clients renew after the first project</p> 
         </div>
-        <div class="card">
+        <div class="card-stat">
             <h2><b>5x</b></h2> 
             <p>Increase in reach</p> 
         </div>
-        <div class="card">
+        <div class="card-stat">
             <h2><b>75%</b></h2> 
             <p>ROI in 6 months or less</p> 
         </div>   
@@ -50,69 +49,102 @@
   <div class="main team">
       <h1> Meet the Leadership Team</h1>
       <p> Our passion-filled team works together with professionalism and ambition - taking ownership of our work to deliver the best possible results.</p>
-      <section class="container-about">
-        <div class="member-card">
-          <div class="member-card-inner">
-            <div class="member-card-front">
-              <img src="../img/LuluF.jpg" alt="Lulu Fokming">
-              <div class="member">
-                <h2><b>Lulu Fokming</b></h2> 
-                <p>Team Lead</p> 
-              </div>
+      <div class="container-about">
+        <div class="member-wrap"> <!-- The parent element -->
+            <div class="member"> <!-- Child element that flips -->
+                <div class="member-front">
+                    <div class="member-img" style="background-image: url('../img/LuluF.jpg');"></div>
+                    <div class="member-info">
+                        <h2>Lulu Fokming</h2>
+                        <span>Team Lead</span>
+                    </div>
+                </div>
+                <div class="member-back">
+                    <div class="member-except">
+                        <p>
+                          Born and raised in South Africa and completed my Bachelor of Commerce, I set off to USA to participate in seeking out the millennium bug. I am a passionate Test Engineer with more than a decade of experience in Quality Assurance.  When not working, I enjoy travelling, baking and try very hard to be a hopeful gardener.
+                        </p> <br>
+                        <P>My contribution to assignment 1 are:
+                          <ul>
+                            <li>design and coded the About us page</li>
+                            <li>setup the git repo</li>
+                            <li>documented and provide training using VS code and git</li>
+                          </ul>  
+                        </P>
+     
+                    </div>
+                    <a href="#">Read More</a>
+                </div>
             </div>
-            <div class="member-card-back">
-              <p>Born and raised in South Africa and completed my Bachelor of Commerce, I set off to USA to participate in seeking out the millennium bug. I am a passionate Test Engineer with more than a decade of experience in Quality Assurance.  When not working, I love to travel, enjoy putting on my master chef baking hat and try very hard to be a hopeful gardener.
-              </p> 
-              <p>  My contribution to assignment1 are: design and coded the About Us page, setup the git repo, documented and provide training using VS code and git.</p>
-            </div>
-          </div>
         </div>
-        <div class="member-card">
-          <div class="member-card-inner">
-            <div class="member-card-front">
-              <img src="../img/LuluF.jpg" alt="Marjorie Gordon">
-              <div class="member">
-                <h2><b>Marjorie Gordon</b></h2> 
-                <p>Assistant Lead</p> 
-              </div>
+        <div class="member-wrap">
+            <div class="member">
+                <div class="member-front">
+                    <div class="member-img" style="background-image: url('../img/LuluF.jpg');"></div>
+                    <div class="member-info">
+                        <h2>Marjorie Gordon</h2>
+                        <span>Assistant Lead</span>
+                    </div>
+                </div>
+                <div class="member-back">
+                    <div class="member-excerpt">
+                        <p>
+                          Add text
+                        </p>
+                        <p>
+                          Add text
+                        </p>
+                    </div>
+                    <a href="#">Read More</a>
+                </div>
             </div>
-            <div class="member-card-back">
-              <h1>Marjorie Gordon</h1> 
-              <p>Joined......</p> 
-            </div>
-          </div>
         </div>
-        <div class="member-card">
-          <div class="member-card-inner">
-            <div class="member-card-front">
-              <img src="../img/LuluF.jpg" alt="Francisco Reyes">
-              <div class="member">
-                <h2><b>Francisco Reyes</b></h2> 
-                <p>Team Member</p> 
-              </div>
+        <div class="member-wrap">
+            <div class="member">
+                <div class="member-front">
+                    <div class="member-img" style="background-image: url('../img/LuluF.jpg');"></div>
+                    <div class="member-info">
+                        <h2>Francisco Reyes</h2>
+                        <span>Team Member</span>
+                    </div>
+                </div>
+                <div class="member-back">
+                    <div class="member-except">
+                        <p>
+                          Add text
+                        </p>
+                        <p>
+                          Add text
+                        </p>
+                    </div>
+                    <a href="#">Read More</a>
+                </div>
             </div>
-            <div class="member-card-back">
-              <h1>Francisco Reyes</h1> 
-              <p>Joined......</p> 
-            </div>
-          </div>
         </div>
-        <div class="member-card">
-          <div class="member-card-inner">
-            <div class="member-card-front">
-              <img src="../img/LuluF.jpg" alt="Anri Ferris">
-              <div class="member">
-                <h2><b>Anri Ferris</b></h2> 
-                <p>Team Member</p> 
+        <div class="member-wrap">
+          <div class="member">
+              <div class="member-front">
+                  <div class="member-img" style="background-image: url('../img/LuluF.jpg');"></div>
+                  <div class="member-info">
+                      <h2>Anri Ferris</h2>
+                      <span>Team Member</span>
+                  </div>
               </div>
-            </div>
-            <div class="member-card-back">
-              <h1>Anri Ferris</h1> 
-              <p>Joined......</p> 
-            </div>
+              <div class="member-back">
+                  <div class="member-except">
+                      <p>
+                          Add text
+                      </p>
+                      <p>
+                        Add text
+                      </p>
+                  </div>
+                  <a href="#">Read More</a>
+              </div>
           </div>
-        </div>
-      </section>
+      </div>
+    </div>
+    </div>
     </div>
 
   <div class="press">
