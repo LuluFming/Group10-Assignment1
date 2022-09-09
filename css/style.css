@@ -63,12 +63,14 @@ button:hover a {
   display: flex;
   list-style-type: none;
   font-family: sans-serif;
+  
 }
 
 .navbar a {
   color: #fff;
   padding: 10px;
   margin: 0 5px;
+  text-decoration-line: none;
 }
 
 .navbar a:hover {

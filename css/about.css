@@ -30,7 +30,11 @@ body {
 }
 .banner h1{
   padding-top: 35px;
-  font-size: 4em;
+  font-size: 5em;
+}
+.banner h3{
+  padding-top: 2%;
+  padding-bottom: 2%;
 }
 
 
@@ -41,7 +45,7 @@ body {
   perspective: 800px;
   width: auto;
   height: 250px;
-  flex: 2;
+  flex: 3;
 }
 
 .main {
@@ -70,17 +74,23 @@ body {
   margin-right: 20%;
 }
 
+.values-inner img {
+  max-width: 100%;
+  height: auto;
+}
+
 .press {
-  margin-top: 15%;
-  display: grid;
+  display: block;
+  margin-top: -1px;
   height: 300px;
   width: auto;
-  background-color: mintcream;
+  background-color: #F3F9FF;
 }
 .press h1{
   text-align: center;
   color: #444;
   font-size: 1.8em;
+
 }
 
 .fa {
@@ -214,4 +224,8 @@ body {
   .member-back ul {
     font-size: 0.8em;
   }
+  .div-values
+{
+    height: 500px;
+    width: auto;
 }
