@@ -11,7 +11,7 @@ body {
   height: 100%;
 }
 
-.banner-img {
+.about-banner-img {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(../img/About-banner.jpg);
   height: 100%;
   background-position: center;
@@ -19,7 +19,7 @@ body {
   background-size: cover;
   position: relative;
 }
-.banner {
+.about-banner {
   text-align: center;
   color: white;
   height: auto;
@@ -28,11 +28,11 @@ body {
   top: 50%;
   left: 50%;
 }
-.banner h1{
+.about-banner h1{
   padding-top: 35px;
   font-size: 5em;
 }
-.banner h3{
+.about-banner h3{
   padding-top: 2%;
   padding-bottom: 2%;
 }
@@ -80,8 +80,7 @@ body {
 }
 
 .press {
-  display: block;
-  margin-top: -1px;
+  margin-top: -10px;
   height: 300px;
   width: auto;
   background-color: #F3F9FF;
@@ -208,11 +207,11 @@ body {
     width: auto;
     margin: 3% 2% 4% 2%;
   }
-  .banner h1 {
+  .about-banner h1 {
     font-size: 3em;
   }
-  .banner h3 {
-    font-size: 1em;
+  .about-banner h3 {
+    font-size: 0.8em;
     margin-left: 3%;
     margin-right: 3%;
     line-height: 1.2;
