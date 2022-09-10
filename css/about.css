@@ -79,27 +79,6 @@ body {
   height: auto;
 }
 
-.press {
-  margin-top: -10px;
-  height: 300px;
-  width: auto;
-  background-color: #F3F9FF;
-}
-.press h1{
-  text-align: center;
-  color: #444;
-  font-size: 1.8em;
-
-}
-
-.fa {
-  padding: 20px;
-  font-size: 30px;
-  width: 50px;
-  text-align: center;
-  text-decoration: none;
-}
-
 .member-wrap {
   min-width: 250px;
   max-width: 380px;
@@ -115,6 +94,7 @@ body {
   transition: transform 1s;
   transform-style: preserve-3d;
 }
+
 .member-front, .member-back {
   position: absolute;
   width: 100%;
@@ -187,6 +167,7 @@ body {
   font-weight: bold;
   border-radius: 5px;
 }
+
 .container-about {
   max-width: 2400px;
   margin: auto;
@@ -195,8 +176,35 @@ body {
   justify-content: center;
   flex-wrap: wrap;
 }
-@media only screen and (max-width: 768px) {
-  /* For mobile phones: */
+
+.about-press {
+  margin-top: -10px;
+  height: 280px;
+  width: auto;
+  background-color: #F3F9FF;
+}
+
+.about-press img {
+  width:100px;
+  height: 100px;
+  opacity: 0.5;
+  display: block;
+  margin-top: 1%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+@media only screen and (max-width: 768px) {  
+  .about-banner h1 {
+    font-size: 3em;
+  }
+  .about-banner h3 {
+    font-size: 0.8em;
+    margin-left: 3%;
+    margin-right: 3%;
+    line-height: 1.2;
+  }
   .container-stats {
     flex-direction: column;
     flex-wrap: wrap;
@@ -207,15 +215,6 @@ body {
     width: auto;
     margin: 3% 2% 4% 2%;
   }
-  .about-banner h1 {
-    font-size: 3em;
-  }
-  .about-banner h3 {
-    font-size: 0.8em;
-    margin-left: 3%;
-    margin-right: 3%;
-    line-height: 1.2;
-  }
   .member-back p {
     font-size: 0.8em;
   }
@@ -223,8 +222,4 @@ body {
   .member-back ul {
     font-size: 0.8em;
   }
-  .div-values
-{
-    height: 500px;
-    width: auto;
 }
