@@ -10,7 +10,6 @@
   color:#071448;
   text-align: center;
   justify-content: center;
-  font-size: larger;
   display: inline-block;}
 
 
@@ -81,3 +80,31 @@ text-align:center;}
 
 .googlemap {padding:10px;}
 
+#contactus{font-size: 50px}
+
+input[type=submit] {
+  background-color: #5177FF;
+  border: none;
+  color: white;
+  padding: 8px 16px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+  font-weight: bold;
+  font-family:Verdana;
+  font-size: 14px;
+  border-radius: 8px;}
+h2{font-family:Verdana;
+  color:#071448;
+text-align: center;}
+p{font-family:Verdana;
+  color:#071448;
+text-align:center;}
+form{font-family:Verdana;
+  color:#071448;
+text-align: center;}
+.emaildiv{margin:auto;
+  width: 50%;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;}
