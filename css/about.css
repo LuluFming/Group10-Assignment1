@@ -13,27 +13,29 @@ body {
 }
 
 .about-banner-img {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(../img/About-banner.jpg);
-  height: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(../img/About-banner.png);
+  height:100%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  position: relative;
+  position: relative;  
 }
 .about-banner {
   text-align: center;
-  color: white;
   height: auto;
   padding-bottom: 0.5%;
   margin-top: -1px;
   top: 50%;
   left: 50%;
 }
+
 .about-banner h1{
+color: aliceblue;
   padding-top: 35px;
   font-size: 5em;
 }
 .about-banner h3{
+  color: white;
   padding-top: 2%;
   padding-bottom: 2%;
 }
@@ -46,7 +48,7 @@ body {
   perspective: 800px;
   width: auto;
   height: 250px;
-  flex: 3;
+  flex:1
 }
 
 .main {
@@ -94,6 +96,19 @@ body {
   height: 100%;
   transition: transform 1s;
   transform-style: preserve-3d;
+}
+
+.member1 {
+  background-image: url('../img/LuluF.jpg');
+}
+.member2 {
+  background-image: url('../img/MKG.jpeg');
+}
+.member3 {
+  background-image: url('../img/FranciscoR.jpg');
+}
+.member4 {
+  background-image: url('../img/AnriF.png');
 }
 
 .member-front, .member-back {
@@ -220,6 +235,17 @@ body {
   }
   
   .member-back ul {
-    font-size: 0.8em;
+    font-size: 0.8em; 
   }
+
+
+  .navbar a {
+    font-size: 80%;
+    }
+
+    .logoimg {
+      width:40px;
+       height:40px;
+      }
+    
 }
