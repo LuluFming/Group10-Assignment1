@@ -168,10 +168,22 @@ body {
     box-shadow: 0px 5px 1rem rgba(255, 94, 98, 0.5);
 } 
 
+
+/*--quote--*/
+
 .quote-img {
   background-color:hsl(180, 20%, 90%);
   height: 400px;
   background-size: cover;
+  }
+
+.h1q {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 900;
+  text-align: center;
+  font-size: 60px;
+  color:#1488cc;
+  margin: 0px;
 }
 
 
