@@ -11,67 +11,64 @@ body {
 
 /* G10 Logo */
 .logo-img {
-  text-align: left;
   height: 3rem;
   width: 3rem;
-  left: 5%;
 }
 
 /* Navbar */
 .navbar {
-  position: relative;
   background-color: rgba(21, 144, 27, 0.511);
-  color: #fff;
+  position  : relative;
+  width     : 100%;
   height: 70px;
 }
 
-.flex {
-  display: flex;
-  align-items: center;
-  height: 100%;
-  justify-content: space-between;
-}
-
-.container {
-  max-width: 1400px;
+.nav-container {
+  width: 90%;
   margin: 0 auto;
-  overflow: auto;
-  padding: 0 40px;
 }
 
-.navbar ul {
-  display: flex;
-  list-style-type: none;
+.nav-menu {
+  display        : flex;
+  justify-content: space-between;
+  list-style     : none;
 }
 
-.navbar a {
-  color: #fff;
-  padding: 10px;
-  margin: 0 5px;
+
+.nav-items {
+  display        : flex;
+  align-items    : center;
+  justify-content: space-between;
+  height         : 70px;
+}
+
+
+.nav-menu a{
+  display        : block;
+  position       : relative;
+  padding        : 12px;
+  color          : white;
+  text-decoration: none;
   font-size: 1.3em;
-  text-decoration: none; 
 }
 
-.navbar a:hover {
+.nav-menu a:hover {
   border-bottom: 2px #fff solid;
 }
 
-/* Style the footer */
-.grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-}
 
+/* Style the footer */
 .grid-3 {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
 }
 
+.grid-3 span{
+  font-size: 0.7em;
+}
+
 .footer {
+  display:block;
   background-color: rgba(32, 146, 100, 0.824);
   padding: 10px;
   color: #fff;
@@ -85,9 +82,6 @@ body {
   line-height: 1.8;
 }
 
-.footer a:hover {
-  border-bottom: 2px #fff solid;
-}
 
 .footer-company {
   text-align: center;
@@ -95,14 +89,19 @@ body {
   line-height: 1.6;
 }
 
-.footer-company p{
-  font-size: 0.5em;
+.footer-company p {
+  font-size: 0.7em;
 }
 
  .footer-menu {
   text-align: center;
-  line-height: 1.8;
+  line-height: 1.9;
 }
+
+.footer-menu a:hover {
+  border-bottom: 1.5px #fff solid;
+}
+
 
 
 .main-img {
@@ -131,8 +130,7 @@ body {
     padding-left: 18px;
     padding-right: 18px;
     background: #1488cc;
-    background: -webkit-linear-gradient(to right, #2b32b2, #1488cc);
-    background: linear-gradient(to right, #2b32b2, #1488cc);
+    background: linear-gradient(to right, #333ac1, #1488cc);
     margin-right: 50%;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
@@ -171,28 +169,38 @@ body {
 
 /*--quote--*/
 
-.quote-img {
+.quote-block {
   background-color:hsl(180, 20%, 90%);
-  height: 400px;
+  height: 550px;
   background-size: cover;
+  text-align: center;
   }
 
-.h1q {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+.quote-block h1 {
   font-weight: 900;
-  text-align: center;
   font-size: 60px;
   color:#1488cc;
   margin: 0px;
 }
 
+.quote-block blockquote{
+  font-size: larger;
+  color: #404040;
+}
+
+.quote-block author {
+  font-size: large;
+  color: black
+}
+
+.quote-block span {
+ font-size: small;
+ color: #767676;
+}
+
 
 
 @media screen and (max-width: 800px) {
-  .navbar a {
-    font-size: 90%;
-    text-decoration: none; 
-  }
 
   .main-img {
     background-image: url(../img/HomeAthlete2.jpg);
@@ -217,12 +225,17 @@ body {
 
 }
 
+
 @media screen and (max-width: 650px) {
+
   .navbar a {
-    padding: 5px;
-    font-size: 60%;
-    text-decoration: none; 
-  }
+    font-size: 50%;
+    }
+
+  .logoimg {
+      width:30%;
+       height:30%;
+   }
 
   .main-img {
     background-image: url(../img/HomeAthlete3.jpg);
@@ -247,11 +260,40 @@ body {
     font-size: 0.6rem;
 }
 
-.footer-company {
+.quote-block {
+  height: 100%;
+  }
+
+.quote-block h1 {
+  font-size: 80%;
+}
+
+.quote-block blockquote{
+  font-size: 80%;
+}
+
+.quote-block author {
+  font-size: 80%;
+}
+
+.quote-block span {
+  font-size: 80%;
+}
+
+
+.grid-3 span{
   font-size: 40%;
 }
 
 .footer-company p{
   font-size: 40%;
 }
+
+.footer-menu a{
+  font-size: 60%;
+}
+.footer-company h{
+  font-size: 70%;
+}
+
 }
