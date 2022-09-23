@@ -1,0 +1,152 @@
+* {
+  box-sizing: border-box;
+}
+/* Header*/
+.service-header{
+  text-align: center;
+  font-size: 35px;
+  color: teal;
+  line-height: 1.5;
+  padding: 10px;
+}
+.service-header p{
+  font-size: 70%;
+  color: #504c4c;
+
+}
+
+/* Servie panels*/
+.service-container {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 30px;
+  text-align: left;
+}
+
+.service-left {
+  background-color: #f2f2f3;
+  padding: 35px;
+  flex: 50%;
+  height: 600px;
+}
+
+.service-left-img {
+  background-color: white;
+  padding: 70px;
+  flex: 50%;
+  height: 600px;
+}
+
+.service-left h3{
+  color:#1488cc;
+}
+
+.service-right h3{
+  color:#1488cc;
+}
+
+.service-right a{
+  font-size: 35%;
+
+}
+
+
+.service-right {
+  background-color: white;
+  padding: 35px;
+  flex: 50%;
+  height: 600px;
+}
+
+.service-right-img {
+  background-color: #f2f2f3;
+  padding: 70px;
+  flex: 50%;
+  height: 600px;
+}
+
+/*Service images*/
+.service-img{
+  background-image: #f2f2f3;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.service-img1 {
+  background-image: url("../img/service1.jpeg");
+
+}
+
+.service-img2 {
+  background-image: url("../img/service2.jpeg");
+
+}
+
+.service-img3 {
+  background-image: url("../img/service3.jpeg");
+}
+
+.service-img4 {
+  background-image: url("../img/service4.jpeg");
+}
+
+.divider {
+    background:#f2f2f3;
+    height: 50px;
+    width: 100%;
+}
+
+@media (max-width: 1024px) {
+  .service-right, .service-left {
+    flex: 100%;
+  }
+
+}
+
+@media (max-width: 450px) {
+  .service-header{
+    font-size: 95%;
+  }
+
+  .service-container {
+    font-size: 95%
+  }
+
+  
+.divider {
+    background:white;
+    height: 0px;
+}
+.service-left {
+  background-color: #f2f2f3;
+  height: 50%
+}
+
+.service-left-img {
+  background-color: white;
+  padding: 0px;
+  height: 0px;
+
+ }
+.service-right{
+  background-color: white;
+  height: 50%
+
+}
+
+.service-right-img {
+ background-color: white;
+ padding: 0px;
+ height: 0px;
+
+}
+
+/*Service images*/
+.service-img{
+  background-image:white;
+  height: 0px;
+}
+
+
+}
